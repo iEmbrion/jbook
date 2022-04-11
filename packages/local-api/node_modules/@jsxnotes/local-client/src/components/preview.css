@@ -1,0 +1,22 @@
+.preview-wrapper {
+  position: relative;
+  height: 100%;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.preview-wrapper iframe {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+/*the react-draggable.. class is added by react-resizable lib everytime the user drags the resize handle*/
+.react-draggable-transparent-selection .preview-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
